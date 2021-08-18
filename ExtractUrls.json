@@ -2,7 +2,7 @@
     "name": "ExtractUrls",
     "version": "1.0",
     "author": "Anthony Miracle",
-    "url": "https://git-internal.oit.duke.edu/itso/cortex-responders",
+    "url": "https://github.com/sequel7/extracturls",
     "license": "AGPL-v3",
     "description": "Extract URLs from a case and do something with them.",
     "dataTypeList": ["thehive:case"],
