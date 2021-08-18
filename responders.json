@@ -1,0 +1,29 @@
+[{
+    "name": "ExtractUrls",
+    "version": "1.0",
+    "author": "Anthony Miracle",
+    "url": "https://github.com/sequel7/extracturls",
+    "license": "AGPL-v3",
+    "description": "Extract URLs from a case and do something with them.",
+    "dataTypeList": ["thehive:case"],
+    "baseConfig": "ExtractUrls",
+    "config": {
+    },
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "TheHive URL used for the API",
+        "type": "string",
+        "multi": false,
+        "required": true
+    },
+      {
+        "name": "thehive_key",
+        "description": "TheHive API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ],
+    "dockerImage": "sequel7/extracturls"
+}]
