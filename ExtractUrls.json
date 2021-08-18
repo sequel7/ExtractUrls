@@ -23,6 +23,5 @@
         "multi": false,
         "required": true
       }
-    ],
-    "dockerImage": "sequel7/extracturls"
-  }
+    ]
+}
