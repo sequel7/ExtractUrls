@@ -1,0 +1,27 @@
+{
+    "name": "ExtractUrls",
+    "version": "1.0",
+    "author": "Anthony Miracle",
+    "url": "https://git-internal.oit.duke.edu/itso/cortex-responders",
+    "license": "AGPL-v3",
+    "description": "Extract URLs from a case and do something with them.",
+    "dataTypeList": ["thehive:case"],
+    "command": "ExtractUrls/extract_urls.py",
+    "baseConfig": "ExtractUrls",
+    "configurationItems": [
+      {
+        "name": "thehive_url",
+        "description": "TheHive URL used for the API",
+        "type": "string",
+        "multi": false,
+        "required": true
+    },
+      {
+        "name": "thehive_key",
+        "description": "TheHive API key",
+        "type": "string",
+        "multi": false,
+        "required": true
+      }
+    ]
+  }
