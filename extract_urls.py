@@ -42,7 +42,7 @@ def extract_urls(observables):
     # replace all this with emailing the observables or whatever you want to do. Don't forget to add a check to compare observable['tlp] against self.max_tlp if that's a thing you want to do
 
     for observable in observables:
-        if observable['ioc'] and observable['dataType'] == 'url':  # optional filtering by URL and IOC status, redundant with line 24 for demonstration
+        if observable['ioc'] and observable['dataType'] == 'url':  # optional filtering by URL and IOC status, redundant with line 22 for demonstration
             # observables will be dict objects that look like:
             {'_id': '~28720', 'id': '~28720', 'createdBy': 'thehive@thehive.local', 'createdAt': 1629316150415, '_type': 'case_artifact', 'dataType': 'url', 'data': 'https://www.test.com/ioc.html', 'startDate': 1629316150415, 'tlp': 2, 'tags': ['test'], 'ioc': True, 'sighted': True, 'message': '', 'reports': {}, 'stats': {}, 'ignoreSimilarity': False}
 
