@@ -26,7 +26,7 @@ class ExtractUrls(Responder):
         # essentially equivalent to the thehive4py version above:
         # import requests
         # url = self.thehive_url + '/api/case/artifact/_search'
-        # query = {'query': {'_and': ({'_parent': {'_type': 'case', '_query': {'_id': '~24824'}}}, {'_and': ({'_field': 'dataType', '_value': 'url'}, {'_field': 'ioc', '_value': True})})}}
+        # query = {'query': {'_and': ({'_parent': {'_type': 'case', '_query': {'_id': self.case_id}}}, {'_and': ({'_field': 'dataType', '_value': 'url'}, {'_field': 'ioc', '_value': True})})}}
         # response = requests.post(url, json=query, headers={'Authorization': f'Bearer {self.thehive_key}'}, verify=False)
         # observables = response.json()
 
